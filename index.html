@@ -147,41 +147,6 @@ a{color:inherit;text-decoration:none;}
 @media(max-width:600px){
   body{font-size:17px;} .hero-title{font-size:32px;} .toc-grid{grid-template-columns:1fr;}
 }
-
-/* wy-cross-nav-css v1 */
-/* ── 跨卷導覽（側欄底部）── */
-.sb-cross{display:flex;flex-direction:column;align-items:center;gap:8px;
-  width:100%;margin:18px 0 4px;padding:18px 4px 6px;position:relative;}
-.sb-cross::before{content:"";position:absolute;top:0;left:14%;right:14%;
-  height:1px;background:linear-gradient(90deg,
-    transparent 0%,rgba(184,134,11,.15) 18%,
-    var(--gold,#b8860b) 50%,
-    rgba(184,134,11,.15) 82%,transparent 100%);
-  box-shadow:0 1px 0 rgba(212,168,75,.18);}
-.sb-cross::after{content:"";position:absolute;top:6px;left:38%;right:38%;
-  height:1px;background:linear-gradient(90deg,
-    transparent,rgba(184,134,11,.55),transparent);}
-.sb-x{display:flex;flex-direction:column;align-items:center;gap:3px;
-  text-decoration:none;color:var(--sbText,#d4c4a8);padding:4px 4px;width:100%;
-  border-radius:7px;transition:all .25s;}
-.sb-x:hover{background:rgba(184,134,11,.14);transform:translateY(-1px);}
-.sb-x-glyph{width:30px;height:30px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  border:1.2px solid rgba(212,196,168,.55);
-  color:var(--goldL,#d4a84b);font-family:"Noto Sans TC",sans-serif;font-size:14px;
-  background:rgba(184,134,11,.08);transition:all .25s;}
-.sb-x:hover .sb-x-glyph{border-color:var(--gold,#b8860b);color:#fff;
-  background:linear-gradient(135deg,var(--gold,#b8860b),var(--goldL,#d4a84b));
-  box-shadow:0 0 10px rgba(184,134,11,.5);}
-.sb-x-label{font-family:"Noto Sans TC",sans-serif;font-size:10.5px;
-  letter-spacing:1.2px;color:var(--sbText,#d4c4a8);opacity:.78;text-align:center;
-  line-height:1.25;}
-.sb-x:hover .sb-x-label{color:var(--goldL,#d4a84b);opacity:1;}
-.sb-x-hub .sb-x-glyph{background:linear-gradient(135deg,
-  rgba(184,134,11,.22),rgba(212,168,75,.18));
-  border-color:rgba(212,168,75,.55);color:var(--goldL,#d4a84b);font-size:13px;
-  font-weight:700;letter-spacing:1px;}
-
 </style><style>
 /* 總目錄字卡 · 影音膠囊 */
 .toc-cell{position:relative;display:flex;}
@@ -201,10 +166,13 @@ a{color:inherit;text-decoration:none;}
  opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .4s,transform .4s,box-shadow .2s;}
 .wy-vfab.show{opacity:1;transform:translateY(0);pointer-events:auto;}
 .wy-vfab:hover{box-shadow:0 9px 28px rgba(120,80,20,.58);}
-.wy-vfab .wy-vfab-ico{font-size:12px;}
+.wy-vfab .wy-vfab-ico{font-size:12px;align-self:center;}
+.wy-vfab .wy-vfab-txt{display:inline-flex;flex-direction:column;align-items:flex-start;line-height:1.28;}
 .wy-vfab .wy-vfab-txt b{font-weight:800;}
+.wy-vfab .wy-vfab-sub{font-size:12px;font-weight:600;opacity:.82;letter-spacing:.5px;margin-top:1px;}
 @media print{.wy-vfab,.toc-yt{display:none!important;}}
-@media(max-width:600px){.wy-vfab{right:14px;bottom:70px;font-size:12.5px;padding:9px 15px;}}
+@media(max-width:600px){.wy-vfab{right:14px;bottom:70px;font-size:12.5px;padding:9px 15px;}
+ .wy-vfab .wy-vfab-sub{font-size:10.5px;}}
 </style><meta name="wy-full-protection" content="v2-silent">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="googlebot" content="index,follow">
@@ -305,22 +273,7 @@ a{color:inherit;text-decoration:none;}
 <nav class="sb-nav"><a class="sb-item" data-ch="1" href="#chapter-1"><span class="sb-circle">1</span><span class="sb-label" data-wytext="kt2EgNnBjfrl"></span></a>
 <a class="sb-item" data-ch="2" href="#chapter-2"><span class="sb-circle">2</span><span class="sb-label" data-wytext="ktaLg/rCgNfLncH8"></span></a>
 <a class="sb-item" data-ch="3" href="#chapter-3"><span class="sb-circle">3</span><span class="sb-label" data-wytext="kP2MgNz1gNfLncH8"></span></a>
-<a class="sb-item" data-ch="4" href="#chapter-4"><span class="sb-circle">4</span><span class="sb-label" data-wytext="kt2xge7zgMP6kPrO"></span></a></nav>  <!-- wy-cross-nav v1 -->
-  <div class="sb-cross">
-    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-53/" title="第五十三卷">
-      <span class="sb-x-glyph">←</span>
-      <span class="sb-x-label">卷五十三</span>
-    </a>
-    <a class="sb-x sb-x-hub" href="https://weiwen0925.github.io/dazhidulun-0/" title="大智度論門頁">
-      <span class="sb-x-glyph">智</span>
-      <span class="sb-x-label">門頁</span>
-    </a>
-    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-55/" title="第五十五卷">
-      <span class="sb-x-glyph">→</span>
-      <span class="sb-x-label">卷五十五</span>
-    </a>
-  </div>
-</aside>
+<a class="sb-item" data-ch="4" href="#chapter-4"><span class="sb-circle">4</span><span class="sb-label" data-wytext="kt2xge7zgMP6kPrO"></span></a></nav></aside>
 <main class="main">
 <div class="site-hero"><h1 class="hero-title" data-wytext="n/GBjOrfj+3Fk+X1i5OiFO/BEZPBgIzG+oDXy53B/A=="></h1>
 <div class="hero-subtitle" data-wytext="kt2KgvjAjdPCncfjTu+CFMj7hpPDuYHs+43y/5rQ/YeqvtGJ39XPwsj34J3ExYDP4JDjrNGMrpmN/g=="></div><div class="hero-sub" data-wytext="kNWBgNn6jfrlmtHriYGZ0bbt1OT4DabWWo/R2ZL324ehsdG9/tnL1g=="></div>
@@ -408,7 +361,9 @@ var _rt=0,_riv=setInterval(function(){_rt++;resizeAllFrames();if(_rt>50)clearInt
   var txt=document.getElementById('wyVfabTxt');
   var VID={1:'https://youtu.be/O7rnhkgIyt0',2:'https://youtu.be/YitJMn8NO_A',3:'https://youtu.be/b0w9tL5yXKI',4:'https://youtu.be/Gwv1mNMXA9g'};
   var CN={1:'第一品',2:'第二品',3:'第三品',4:'第四品'};
+  var NM={1:'般若智光與無所得之辯證',2:'般若實相與中觀辯證',3:'般若空義與無住辯證',4:'般若幽旨與夜叉語喻'};
   var secs=[];for(var i=1;i<=4;i++){var s=document.getElementById('chapter-'+i);if(s)secs.push([i,s]);}
+  function esc(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;');}
   function upd(){
     var cur=-1;
     for(var j=0;j<secs.length;j++){
@@ -416,8 +371,8 @@ var _rt=0,_riv=setInterval(function(){_rt++;resizeAllFrames();if(_rt>50)clearInt
     }
     if(cur===-1){fab.classList.remove('show');return;}
     fab.classList.add('show');fab.href=VID[cur];
-    if(txt)txt.innerHTML='本品影音 · <b>'+CN[cur]+'</b>';
-    fab.setAttribute('title','觀看'+CN[cur]+'影音說明');
+    if(txt)txt.innerHTML='本品影音 · <b>'+CN[cur]+'</b><span class="wy-vfab-sub">'+esc(NM[cur])+'</span>';
+    fab.setAttribute('title','觀看'+CN[cur]+'｜'+NM[cur]+' 影音說明');
   }
   window.addEventListener('scroll',upd,{passive:true});
   window.addEventListener('resize',upd);
