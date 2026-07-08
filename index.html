@@ -909,4 +909,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C54P3:END-->
+<!--WY-C54P4:BEGIN-->
+<style id="wy-c54p4-css">
+.c54p4-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c54p4-fabbox.show{display:block;}
+.c54p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c54p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c54p4-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c54p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c54p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c54p4-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c54p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c54p4-modal.open{display:flex;}
+.c54p4-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c54p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c54p4-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c54p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c54p4-close:hover{background:#e3d5b8;}
+.c54p4-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c54p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c54p4-tbl th,.c54p4-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c54p4-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c54p4-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c54p4-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c54p4-tbl b{color:#8b2500;}
+.c54p4-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c54p4-note b{color:#8b2500;}
+@media(max-width:900px){.c54p4-fabbox{right:14px;}.c54p4-tbl{font-size:11.5px;}.c54p4-card{padding:26px 14px 16px;}}
+</style>
+<div class="c54p4-fabbox" id="c54p4Box"><button class="c54p4-btn" id="c54p4Btn" type="button" aria-label="開啟全景總表"><span class="c54p4-ic">▦</span><span class="c54p4-ls"><span class="c54p4-l1">本品 · 般若幽旨與夜叉語喻</span><span class="c54p4-l2">破四句 · 五眾即般若 · 六句真言</span></span></button></div><div class="c54p4-modal" id="c54p4Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c54p4-card"><button class="c54p4-close" id="c54p4Close" type="button" aria-label="關閉">×</button><h3>卷五十四·第四品 · 全景總表</h3><p class="sub">卷五十四・第四品｜夜叉語尚可解vs深般若不可知・四幻化譬喻・五眾實相即般若・中觀映射</p><table class="c54p4-tbl"><caption>一、三層轉折：解構言教到即事而真（本品主骨架）</caption><thead><tr><th>層次</th><th>內容</th></tr></thead><tbody><tr><td>第一層·解構言教</td><td>諸天子疑「夜叉語尚可了知，深般若了不可知」；須菩提破四句——不得言有、無、有無、非有非無，一切心行處滅、言語道斷</td></tr><tr><td>第二層·拆解譬喻</td><td>化人、夢中見佛、深澗迴響、幻師化佛四喻明「無說者、無聽者、無知者」；譬喻本身亦微妙無定相，諸天子反陷「轉更深妙」之二度迷失</td></tr><tr><td>第三層·即事而真</td><td>色非深非妙、受想行識非深非妙，乃至一切種智非深非妙——粉碎「深妙」位階，般若不異五眾，五眾實相即是般若波羅蜜</td></tr></tbody></table><table class="c54p4-tbl"><caption>二、四個幻化譬喻與無說無聽的本體論（拆解工具）</caption><thead><tr><th>譬喻</th><th>內容</th></tr></thead><tbody><tr><td>化人說法</td><td>佛化作化人，化人復化作四部眾為之說法，中無說者、聽者、知者——現象發生不需要一個實有的主體</td></tr><tr><td>夢中見佛</td><td>人於夢中見佛說法，醒後無說者、聽者、知者——現象的存在與本體的實有是兩件事，前者是世俗施設，後者是勝義畢竟空</td></tr><tr><td>深澗迴響</td><td>二人在深澗各住一面讚佛法眾，二響交涉而不相解——聲音現象無實體傳遞，如夢如幻</td></tr><tr><td>工幻師化佛</td><td>幻師於四衢道化作佛及四部眾說法，中無說者聽者知者——一切諸法如幻，無說者、無聽者、無知者</td></tr></tbody></table><table class="c54p4-tbl"><caption>三、中觀映射與涅槃終極定義（收束總攝）</caption><thead><tr><th>映射</th><th>內容</th></tr></thead><tbody><tr><td>夜叉語vs破四句</td><td>世俗語言依「因果生滅」之戲論運作；般若以「諸法不自生，亦不從他生」之無生切斷攀緣，破四句以寂滅戲論</td></tr><tr><td>無說無聽vs第一義諦</td><td>幻夢之喻中無說者聽者知者，對應《中論》「諸法畢竟空，無是心非心」——世俗諦看似有說有聽，勝義諦皆如夢幻</td></tr><tr><td>五眾即般若vs生死即涅槃</td><td>色非深非妙、五眾實相即般若，對應《中論》「涅槃與世間，無有少分別」——現象界五蘊本質即涅槃</td></tr><tr><td>涅槃終極定義</td><td>諸觀滅→語言斷→不可說→不可聽→不可知→於一切法無受無著，則入涅槃——工程化的涅槃定義鏈</td></tr></tbody></table><p class="c54p4-note">本品借諸天子由「夜叉語尚可解、深般若不可知」的認知失調起，經解構言教、拆解譬喻、即事而真三層翻轉，終抵「五眾實相即是般若波羅蜜」的核心命題。<b>焦炷即金</b>——不需捨五蘊覓涅槃，當下看透焦炷（五蘊）之本性空寂，那就是金（實相）；煩惱即菩提，無受無著，方入涅槃。</p></div></div>
+<script id="wy-c54p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c54p4Btn"),BOX=document.getElementById("c54p4Box"),MODAL=document.getElementById("c54p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoFab,.wy-vfab,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c54p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C54P4:END-->
 </body></html>
